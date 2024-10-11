@@ -45,7 +45,13 @@ nav ul li a {
 nav ul li a:hover {
     color: #000000;
 }
-
+.logo {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
 /* Home Section */
 #home {
     background: url('https://th.bing.com/th/id/R.8e5ce3d75338904d1e6884c150a58fee?rik=rfGUW7JZs%2fRZwQ&pid=ImgRaw&r=0') no-repeat center center/cover;
@@ -254,6 +260,7 @@ footer {
     display: flex;
     gap: 10px;
     margin-top: 15px;
+    border-radius: 20px;
 }
 
 .footer-section .social-icons a img {
