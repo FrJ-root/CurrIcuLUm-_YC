@@ -53,7 +53,7 @@ body {
     transition: .4s;
 }
 .navbar a:hover::before {
-    width: 100px;
+    width: 100%;
 }
 
 /* Home Section */
@@ -89,19 +89,19 @@ body {
     margin: 0 auto;
 }
 
-
+/*about*/
 #about {
     max-height: 5000px;
-    background: rgb(119, 107, 107);
-    ;
+    background: url('https://media.giphy.com/media/q7YFrRVCSSMLK/giphy.gif');
     padding: 50px 0;
 }
 
 #about .container {
-    width: 80%;
-    display: block;
-    margin: auto;
-    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
 }
 
 #about .founders {
@@ -114,92 +114,29 @@ body {
 
 #about h4 {
     color: rgb(44, 65, 139);
-
 }
 
-#about p {
-    max-width: 700px;
-    margin: 0 auto 40px;
-}
 
 .content {
-    float: left;
     width: 55%;
 }
-
-.image-section {
-    float: right;
-    width: 30%;
+.content-section {
+    max-width: 800px;
+    
 }
-
-.image-section img {
-    width: 100%;
-    height: auto;
-}
-
 .content-section .title {
     text-transform: uppercase;
     font-size: 28px;
-}
-
-.content-section .content .button a {
-    margin-top: 30px;
-    background-color: #3d3d3d;
-    padding: 12px 40px;
-    text-decoration: none;
     color: #fff;
-    font-size: 25px;
-    letter-spacing: 1.5px;
+    justify-content: center;
 }
-
-.content-section .content .button a:hover {
-    background-color: #a52a2a;
+.content-section .title p{
+    text-transform: uppercase;
+    font-size: 15px;
     color: #fff;
+    justify-content: center;
 }
 
-@media screen {
-    .container {
-        width: 80%;
-        display: block;
-        margin: auto;
-        padding-top: 50px;
-    }
-
-    .content-section {
-        float: none;
-        width: 100%;
-        display: block;
-        margin: auto;
-    }
-
-    .image-section {
-        float: none;
-        width: 100%;
-    }
-
-    .image-section img {
-        width: 100;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-
-    .content-section .title {
-        text-transform: center;
-        font-size: 19px;
-    }
-
-    .content-section .content .button {
-        text-align: center;
-    }
-
-    .content-section .content .button a {
-        padding: 9px 30px;
-    }
-}
-
-
-/* Founders Cards */
 .founders {
     display: flex;
     justify-content: space-around;
@@ -240,40 +177,34 @@ body {
 
 /* Contact Section */
 #contact {
-    background: url('https://th.bing.com/th/id/R.8e5ce3d75338904d1e6884c150a58fee?rik=rfGUW7JZs%2fRZwQ&pid=ImgRaw&r=0') no-repeat center center/cover;
+
+    background: url('https://th.bing.com/th/id/R.0fc06a69db8672e25308164a4b71c259?rik=rnlUDRvTsaMkwg&pid=ImgRaw&r=0');
     padding: 50px 0;
 }
 
 #contact .contact-form {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
 }
 
 .contact-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .contact-form {
+    background: transparent;
     flex: 1;
     max-width: 500px;
 }
 
-.contact-image {
-    flex: 1;
-    padding: 20px;
-}
-
-.contact-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
 #contact h2 {
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
+    color: #fff;
+    justify-content: center;
 }
 
 #contact form {
@@ -283,6 +214,7 @@ body {
 #contact label {
     display: block;
     margin-top: 10px;
+    color: #fff;
 }
 
 #contact input,
@@ -292,12 +224,13 @@ body {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 #contact button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #553232;
+    background: url('https://th.bing.com/th/id/R.bbf892674d0ac026a53d1cf9bcbae0ad?rik=ayWtBXR0DbitEA&pid=ImgRaw&r=0');
     color: white;
     border: none;
     border-radius: 5px;
