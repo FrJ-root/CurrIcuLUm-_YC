@@ -5,12 +5,242 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover the beauty of traditional Japanese art. Explore our collection of paintings, prints, and calligraphy.">
     <title>Japanese Art and Culture Collection</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: cursive;
+    color: #195362;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #d1024e; /* sea blue */
+    padding: 15px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #02afd1; sea blue
+    background-color: white;
+    border-radius: 1px;
+}
+
+.navbar ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background-color: #81D4FA;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar ul li:hover::after {
+    transform: scaleX(1);
+}
+
+.brand {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('Pic/q.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    word-spacing: 5px;
+    
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    word-spacing: 5px;
+}
+
+.btn {
+    background-color: #d1024e;
+    color: white;
+    padding: 0.75em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    background-color: #bbc4d8;
+}
+section#collection {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff; /* light sea color */
+}
+
+#collection h2 {
+    color: #d1024e;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#collection p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 6px; /* Adjust this value as needed */
+
+    line-height: 30px;
+
+}
+
+.art-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.art-item {
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.art-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#show-more {
+    margin-top: 30px;
+}
+
+#show-more button {
+    background-color: #d1024e;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#show-more button:hover {
+    background-color: #bbc4d8;
+}
+
+
+/* Footer */
+footer {
+    background-color:#d1024e ;
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-left: 200px;
+
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.footer-section p {
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+        
+</style>
 <body>
         <nav>
             <div class="navbar">
-                <div class="brand">日本
+                <div class="brand">日んらなき本
                 </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -35,29 +265,26 @@
         
         <div class="art-grid">
             <div class="art-item">
-                <img src="Pic/1.jpeg" alt="Art 1">
+                <img src="Pic/a.jpg" alt="Art 1">
             </div>
             <div class="art-item">
                 <img src="Pic/2.jpg" alt="Art 2">
             </div>
             <div class="art-item">
-                <img src="Pic/11.jpeg" alt="Art 3">               
+                <img src="Pic/b.jpg" alt="Art 3">               
             </div>
             <div class="art-item">
-                <img src="Pic/4.jpeg" alt="Art 4">
+                <img src="Pic/c.jpg" alt="Art 4">
             </div>
 
             <div class="art-item">
-                <img src="Pic/5.jpg" alt="Art 1">
+                <img src="Pic/d.jpg" alt="Art 1">
             </div>
             <div class="art-item">
-                <img src="Pic/9.jpg" alt="Art 2">
+                <img src="Pic/ey-facts-and-figures-2022 (1).jpg" alt="Art 2">
             </div>
             <div class="art-item">
-                <img src="Pic/8.jpg" alt="Art 3">               
-            </div>
-            <div class="art-item">
-                <img src="Pic/10.jpg" alt="Art 4">
+                <img src="Pic/932d904d65dc81d6d87cfb6c8c66f3f4.jpg" alt="Art 3">               
             </div>
 
 
@@ -65,7 +292,7 @@
         
 
         <div id="show-more">
-            <button>Show More</button>
+            <a href="gallery.html"><button>Show More</button></a>
         </div>
     </section>
 
@@ -89,7 +316,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Our Website. All Rights Reserved.</p>
+                <p>&copy; 2024 Cult Japan. All Rights Reserved.</p>
             </div>
         </div>
     </footer>

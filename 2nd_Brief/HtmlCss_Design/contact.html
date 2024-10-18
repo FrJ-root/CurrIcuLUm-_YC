@@ -9,12 +9,16 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
     </head>
-    <body style="display: block; margin: 300px; background-color: black; margin-top: 50px; margin-bottom: 50px;">
-        <nav style="border-top-left-radius: 70px; border-top-right-radius: 70px;">
+    <body
+        style="margin: 300px; background-color: black; margin-top: 50px; margin-bottom: 50px;">
+        <nav
+            style="border-top-left-radius: 70px; border-top-right-radius: 70px;">
             <div class="navbar">
-                <div class="brand">日本
+                <div class="brand">日んらなき本
                 </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -26,42 +30,103 @@
         </nav>
         <style>
             .cont-container{
-                background-color: white;
-            }
-            .contact-case{
-                margin-top: 400px; 
-                margin-right: 300px;
-                margin-bottom: 285px;
-                h1{
-                   display: flex;
-                   justify-content: flex-end;
-                   margin-bottom: 100px;
-                   font-size: 70px;
-                   font-family: Cormorant Garamond, serif; 
-                   font-style: italic;
-                   br{
-                     display: flex;
-                     justify-content: flex-end;
-                   }-
+                display: flex;
+                background-image: url(./Pic/www.jfif);
+                height: 1200px;
+                .right-case{
+                        height: 600px;
+                        width: 600px;
+                        margin-top: 300px; 
+                        margin-left: 400px;
+                        margin-bottom: 285px;
+                        h1{
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 90px;
+                            font-size: 70px;
+                            font-family: Cormorant Garamond, serif; 
+                            font-style: italic;
+                        }
+                        h4{
+                            display: flex;
+                            font-size: 30px;
+                            font-family: Cormorant Garamond, serif; 
+                            font-weight: 500; 
+                            font-style: italic;
+                        }
                 }
-                h4{
-                    font-size: 30px;
-                    font-family: Cormorant Garamond, serif; 
-                    font-weight: 500; 
-                    font-style: italic;
+                .left-case{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 750px;
+                        height: 600px;
+                        margin-top: 300px;
+                        margin-left: 100px;
+                        input[type=text], select {
+                            color: rgb(255, 255, 255);
+                            background-color: transparent;
+                            width: 100%;
+                            height: 70px;
+                            padding: 12px 20px;
+                            margin: 8px 0;
+                            display: inline-block;
+                            border: none;
+                            border-bottom: 8px solid #ddc3c3;
+                            border-radius: 4px;
+                            font-size: 30px;
+                            font-family: Cormorant Garamond, serif; 
+                            font-weight: 600; 
+                            font-style: normal;
+                        }
+                        input[type=submit] {
+                            display: flex;
+                            position: relative;
+                            top: 50px;
+                            left: 125px;
+                            width: 500px;
+                            height: 100px;
+                            background-color: #d1024e;
+                            color: white;
+                            padding: 20px 20px;
+                            margin: 7px 0;
+                            border: none;
+                            border-radius: 70px;
+                            cursor: pointer;
+                            font-size: 30px;
+                            font-family: Cormorant Garamond, serif; 
+                            font-weight: 600; 
+                            font-style: normal;
+                        }
+                        input[type=submit]:hover {
+                            background-color: rgb(255, 161, 161);
+                        }
                 }
             }
+            
         </style>
         <section id="contact" class="cont-container">
-            <div class="content" style="display: flex; justify-content: flex-end; ">
-                <div class="contact-case">
-                    <h1>Contact<br>US</h1>
-                    <h4>it is very important for us to keep in touch with<br>you, so we are always ready to answer any <br>question or if you bay any pic, Shoot!</h4>
-                </div>
+            <div class="left-case">
+                <img src="./Pic/qqqqqqqqqqq.jfif" style="width: 400px; display: flex; margin-left: 180px;"
+                <form">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <input type="text" id="email" placeholder="Your Email">
+                    <select name="country" id="country" placeholder="country">
+                        <option value="#">Country</option>
+                    </select>
+                    <input id="but" type="submit" value="submit">
+                </form>
+            </div>
+            <div class="right-case">
+                <h1>Contact<br>US</h1>
+                <h4>it is very important for us to keep in touch with<br>you, so
+                    we are always ready to answer any <br>question or if you bay
+                    any pic, Shoot!</h4>
             </div>
         </section>
-        
-        <footer style="border-bottom-left-radius: 70px; border-bottom-right-radius: 70px;">
+
+        <footer
+            style="border-bottom-left-radius: 70px; border-bottom-right-radius: 70px;">
             <div class="container">
                 <div class="footer-content">
                     <div class="footer-section about">
@@ -79,7 +144,7 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2024 Our Website. All Rights Reserved.</p>
+                    <p>&copy; 2024 Cult Japan. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
