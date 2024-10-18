@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Discover the beauty of traditional Japanese art. Explore our collection of paintings, prints, and calligraphy.">
+        <title>Japanese Art and Culture Collection</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Creepster&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        #gallery{
+            background-image: url('./Pic/R.jfif');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .title{
+            align-items: center;
+            color: rgb(255, 255, 255);
+            font-family: "Climate Crisis", sans-serif;
+            font-optical-sizing: auto;
+            font-size: 50px;
+            font-style: normal;
+            font-variation-settings:
+            "YEAR" 1979;
+            -webkit-text-stroke: 5px rgb(0, 0, 0);
+            text-align: center;
+            padding-top: 80px;
+        }
+        .ficon img{
+            margin-top: 30px;
+            padding-top: 0px;
+            border-radius: 70px;            
+            width: 1400px;
+            height: 850px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border: 5px solid rgb(255, 255, 255) ;
+        }
+        .slide1 img{
+        margin-top: 100px;
+        border-radius: 70px;
+        height: 500px;
+        width: 400px;
+        position: absolute;
+        right: 1500px;
+        top: 1150px;
+        }
+        .slide2 img{
+            margin-top: 5px;
+            padding-top: 30px;
+            border-radius: 70px;
+            height: 500px;
+            width: 400px;
+            margin-left: 1059px;
+            margin-right: auto;
+        }
+        .slide3 img {
+        margin-top: 100px;
+        border-radius: 70px;
+        height: 500px;
+        width: 400px;
+        position: absolute;
+        right: 610px;
+        top: 1150px;
+        }
+        .slides{
+            display: flex;
+            flex-direction: row;
+        }
+        .btnarrow{
+            display: flex;
+            font-size: larger;
+            justify-content: center;
+            margin-top: 200px;
+        }
+        .btn1 , .btn2 {
+            background-color: transparent;
+            color: rgb(250, 250, 250);
+            padding: 0.75em 2em;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 70px;
+            margin-bottom: 100px;
+            border: 4px solid white;
+            background-image: url('https://media2.giphy.com/media/b29IZK1dP4aWs/giphy.gif');
+        }
+
+.btn1:hover , .btn2:hover{
+    background-color: #5a4f56;
+}
+    </style>
+    <body>
+        <nav>
+            <div class="navbar">
+                <div class="brand">日本
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section>
+            <div id="gallery" class="container">
+                <div class="content">
+                    <div class="title">
+                        <h1>Gallery</h1>
+                    </div>
+                    <div class="ficon">
+                        <img src="Pic/21.jpg" alt="slidprinc">
+                    </div>
+                    <div class="slides">
+                        <div class="slide1">
+                            <img src="Pic/23.jpg" alt="slid1">
+                        </div>
+                        <div class="slide2">
+                            <img src="Pic/21.jpg" alt="slid2">
+                        </div>
+                        <div class="slide3">
+                            <img src="Pic/7.jpg" alt="slid3">
+                        </div>
+                    </div>
+                    <div class="btnarrow">
+                        <a href="#" class="btn1"><<</a>
+                        <a href="#" class="btn2">>></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section about">
+                        <h3>About Us</h3>
+                        <p>We are passionate about bringing the finest Japanese
+                            art to the world. Our collection includes prints,
+                            paintings, and calligraphy from renowned
+                            artists.</p>
+                    </div>
+
+                    <div class="footer-section contact">
+                        <h3>Contact Us</h3>
+                        <p>Email: info@japaneseartgallery.com</p>
+                        <p>Phone: +123 456 7890</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Our Website. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

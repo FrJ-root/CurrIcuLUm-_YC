@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-    background-color: #0288D1; /* sea blue */
+    background-color: #d1024e; /* sea blue */
     padding: 15px 20px;
 }
 
@@ -42,7 +42,7 @@ nav {
 }
 
 .navbar ul li a:hover {
-    color: #0288D1; /* sea blue */
+    color: #0288D1; sea blue
     background-color: #81D4FA; /* lighter sea blue */
     border-radius: 5px;
 }
@@ -69,11 +69,8 @@ nav {
     font-weight: bold;
 }
 
-
-
-/* Hero section*/
 .hero {
-    background-image: url('images/landing1.jpg');
+    background-image: url('Pic/2.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -114,15 +111,10 @@ nav {
 .btn:hover {
     background-color: #6e99f5;
 }
-
-
-
-/* Start Gallery */
-
 section#collection {
     padding: 40px;
     text-align: center;
-    background-color: #E0F7FA; /* light sea color */
+    background-color: #2c8692; /* light sea color */
 }
 
 #collection h2 {
@@ -191,12 +183,9 @@ section#collection {
 }
 
 
-
-
-
 /* Footer */
 footer {
-    background-color:#0288D1 ;
+    background-color:#d1024e ;
     color: rgb(0, 0, 0);
     padding: 40px 0;
 }
@@ -236,3 +225,4 @@ footer p {
     margin: 0;
     font-size: 0.9em;
 }
+        
